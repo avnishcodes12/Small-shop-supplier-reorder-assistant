@@ -1,0 +1,119 @@
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+No products added yet.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+All products are above their reorder level. Nothing to order.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+--- Add Product (leave any field blank to cancel) ---
+Product code (3-10 chars: A-Z, 0-9, -): Product name: Supplier name: Supplier phone (10 digits): Current stock (units): Reorder level (reorder when stock <= this): Reorder quantity (units per order): Unit cost (Rs.): Product added successfully.
+Note: stock is already at or below the reorder level.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+--- Add Product (leave any field blank to cancel) ---
+Product code (3-10 chars: A-Z, 0-9, -): Product name: Supplier name: Supplier phone (10 digits): Current stock (units): Reorder level (reorder when stock <= this): Reorder quantity (units per order): Unit cost (Rs.): Product added successfully.
+Note: stock is already at or below the reorder level.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+--- Add Product (leave any field blank to cancel) ---
+Product code (3-10 chars: A-Z, 0-9, -):   Invalid: code must be 3-10 characters using letters, digits or '-', starting with a letter or digit.
+Product code (3-10 chars: A-Z, 0-9, -):   Invalid: code must be 3-10 characters using letters, digits or '-', starting with a letter or digit.
+Product code (3-10 chars: A-Z, 0-9, -): Product name: Supplier name: Supplier phone (10 digits): Current stock (units): Reorder level (reorder when stock <= this): Reorder quantity (units per order): Unit cost (Rs.): Product added successfully.
+Note: stock is already at or below the reorder level.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+ABC        Min Code Item               0       0       1       0.01  Supplier A        9000000001  *REORDER*
+ABCDEFGHIJ xxxxxxxxxxxxxxxxxxxxx  100000  100000  100000 1000000.00  Supplier B        9000000002  *REORDER*
+EQ-1       Equal Level Item           10      10       5       4.50  Supplier C        9000000003  *REORDER*
+Total products: 3
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+CODE       PRODUCT                 STOCK   LEVEL   ORDER          EST.COST  CALL SUPPLIER
+----------------------------------------------------------------------------------------------------
+ABC        Min Code Item               0       0       1              0.01  Supplier A (9000000001)
+ABCDEFGHIJ xxxxxxxxxxxxxxxxxxxxx  100000  100000  100000   100000000000.00  Supplier B (9000000002)
+EQ-1       Equal Level Item           10      10       5             22.50  Supplier C (9000000003)
+Items to reorder: 3   Estimated total cost: Rs. 100000000022.51
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+--- Summary ---
+Products stored       : 3 / 50
+Products added (total): 3
+Need reorder now      : 3
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: Goodbye!

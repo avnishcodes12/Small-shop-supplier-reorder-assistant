@@ -1,0 +1,93 @@
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: Invalid choice. Enter a number from 0 to 6.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: Invalid choice. Enter a number from 0 to 6.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+--- Add Product (leave any field blank to cancel) ---
+Product code (3-10 chars: A-Z, 0-9, -):   Invalid: code must be 3-10 characters using letters, digits or '-', starting with a letter or digit.
+Product code (3-10 chars: A-Z, 0-9, -):   Invalid: code must be 3-10 characters using letters, digits or '-', starting with a letter or digit.
+Product code (3-10 chars: A-Z, 0-9, -):   Invalid: code must be 3-10 characters using letters, digits or '-', starting with a letter or digit.
+Product code (3-10 chars: A-Z, 0-9, -): Product name:   Invalid: use 1-40 printable characters. Try again.
+Product name: Supplier name: Supplier phone (10 digits):   Invalid: phone must be exactly 10 digits. Try again.
+Supplier phone (10 digits):   Invalid: phone must be exactly 10 digits. Try again.
+Supplier phone (10 digits): Current stock (units):   Invalid: enter a whole number from 0 to 100000. Try again.
+Current stock (units):   Invalid: enter a whole number from 0 to 100000. Try again.
+Current stock (units): Reorder level (reorder when stock <= this): Reorder quantity (units per order):   Invalid: enter a whole number from 1 to 100000. Try again.
+Reorder quantity (units per order): Unit cost (Rs.):   Invalid: enter an amount above 0 and up to 1000000, with at most 2 decimals (e.g. 45 or 45.50). Try again.
+Unit cost (Rs.):   Invalid: enter an amount above 0 and up to 1000000, with at most 2 decimals (e.g. 45 or 45.50). Try again.
+Unit cost (Rs.):   Invalid: enter an amount above 0 and up to 1000000, with at most 2 decimals (e.g. 45 or 45.50). Try again.
+Unit cost (Rs.): Product added successfully.
+Note: stock is already at or below the reorder level.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+--- Add Product (leave any field blank to cancel) ---
+Product code (3-10 chars: A-Z, 0-9, -):   Duplicate: product RC-101 already exists. Enter a different code.
+Product code (3-10 chars: A-Z, 0-9, -): Product name: Supplier name: Add cancelled.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+Enter product code to search: No product found with code XYZ-999.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+RC-101     Basmati Rice 5kg            8      10      20     410.00  Sharma Traders    9876543210  *REORDER*
+Total products: 1
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: Goodbye!

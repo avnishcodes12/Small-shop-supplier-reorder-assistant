@@ -1,0 +1,18 @@
+flowchart TD
+    A([Add Product]) --> F{Store full?}
+    F -- Yes --> F1[Show 'store is full'] --> Z([Back to menu])
+    F -- No --> G[/Read code, trim it,<br/>make it uppercase/]
+    G --> H{Blank?}
+    H -- Yes --> X[Show 'Add cancelled'] --> Z
+    H -- No --> V{Valid format and<br/>not a duplicate?}
+    V -- No --> E1[Show the error] --> G
+    V -- Yes --> J[/Read next field: name, supplier,<br/>phone, stock, level, quantity, cost/]
+    J --> K{Blank?}
+    K -- Yes --> X
+    K -- No --> L{Valid?}
+    L -- No --> E2[Show the error] --> J
+    L -- Yes --> M[Save it with the setter<br/>this->field = value]
+    M --> N{More fields?}
+    N -- Yes --> J
+    N -- No --> P[addProduct checks again,<br/>items count = product,<br/>count++, totalAdded++]
+    P --> Q[Show 'Product added'] --> Z

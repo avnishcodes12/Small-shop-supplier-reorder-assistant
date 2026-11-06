@@ -1,0 +1,17 @@
+SAMPLE PRODUCT DATA - Small Shop Supplier Reorder Assistant
+(Reference data for the demo. Phase 1 keeps data in memory only, so these
+records are entered through the menu, through menu option 6 "Load demo
+products", or by piping data/demo_normal_input.txt into the program.)
+
+Fields: productCode | name | supplierName | supplierPhone | currentStock | reorderLevel | reorderQty | unitCost(Rs)
+
+RC-101  | Basmati Rice 5kg    | Sharma Traders   | 9876543210 |  8 | 10 | 20 | 410.00   -> needs reorder
+OIL-01  | Mustard Oil 1L      | Punjab Oil Depot | 9812345678 | 25 | 12 | 24 | 165.50
+SUG-01  | Sugar 1kg           | Sharma Traders   | 9876543210 |  5 | 15 | 30 |  44.00   -> needs reorder
+TEA-250 | Tea Leaves 250g     | Assam Tea House  | 9123456780 | 40 | 10 | 20 | 120.00
+SOAP-04 | Bath Soap Pack of 4 | Gupta Wholesale  | 9988776655 | 12 | 12 | 10 | 150.00   -> needs reorder (stock = level)
+
+Expected reorder list total for these 5 products: Rs. 11020.00
+  RC-101  20 x 410.00 = 8200.00
+  SUG-01  30 x  44.00 = 1320.00
+  SOAP-04 10 x 150.00 = 1500.00

@@ -1,0 +1,73 @@
+classDiagram
+    direction LR
+    class Product {
+        -string productCode
+        -string name
+        -string supplierName
+        -string supplierPhone
+        -int currentStock
+        -int reorderLevel
+        -int reorderQty
+        -double unitCost
+        -int totalAdded$
+        +int MAX_PRODUCTS$
+        +int CODE_MIN_LEN$
+        +int CODE_MAX_LEN$
+        +int TEXT_MAX_LEN$
+        +int PHONE_LEN$
+        +int QTY_MAX$
+        +setAll(code, name, supplier, phone, stock, level, qty, cost) bool
+        +setProductCode(string) bool
+        +setName(string) bool
+        +setSupplierName(string) bool
+        +setSupplierPhone(string) bool
+        +setCurrentStock(int) bool
+        +setReorderLevel(int) bool
+        +setReorderQty(int) bool
+        +setUnitCost(double) bool
+        +getProductCode() string «inline»
+        +getName() string «inline»
+        +getCurrentStock() int «inline»
+        +getReorderLevel() int «inline»
+        +getReorderQty() int «inline»
+        +getUnitCost() double «inline»
+        +needsReorder() bool «inline»
+        +reorderCost() double «inline»
+        +isValid() bool
+        +hasSameKey(Product) bool
+        +normalizeCode(string)$ string
+        +isValidCode(string)$ bool
+        +isValidText(string)$ bool
+        +isValidPhone(string)$ bool
+        +isValidQty(int)$ bool
+        +isValidCost(double)$ bool
+        +getTotalAdded()$ int
+        +displayHeader()$ void
+    }
+    class ProductStore {
+        -Product items[50]
+        -int count = 0
+        +addProduct(Product) AddResult
+        +findByCode(string) Product* or nullptr
+        +displayAll() void
+        +displayReorderList() int
+        +countNeedingReorder() int
+        +getCount() int «inline»
+        +isFull() bool «inline»
+        +isEmpty() bool «inline»
+    }
+    class AddResult {
+        <<enumeration>>
+        ADD_OK
+        ADD_INVALID
+        ADD_DUPLICATE
+        ADD_FULL
+    }
+    class displayProduct {
+        <<friend function>>
+        displayProduct(Product) void
+    }
+    ProductStore "1" *-- "0..50" Product : stores in array
+    ProductStore ..> AddResult : returns
+    Product ..> ProductStore : friend class
+    displayProduct ..> Product : friend, reads private data

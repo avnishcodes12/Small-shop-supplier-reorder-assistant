@@ -1,0 +1,15 @@
+flowchart TD
+    A([Start]) --> B[Create ProductStore:<br/>array of 50 empty Product objects, count = 0]
+    B --> C[/Show menu and read choice/]
+    C --> D{Valid number<br/>0 to 6?}
+    D -- No --> E[Show 'Invalid choice'] --> C
+    D -- Yes --> W{Which choice?}
+    W -- 0 --> Z([Exit])
+    W -- 1 --> F[[Add Product<br/>see flowchart_add_product]] --> C
+    W -- 2 --> P[For i = 0 to count-1:<br/>displayProduct items i] --> C
+    W -- 3 --> Q[/Read code/] --> Q1{findByCode returns<br/>a pointer?}
+    Q1 -- Yes --> Q2[Display the product] --> C
+    Q1 -- nullptr --> Q3[Show 'not found'] --> C
+    W -- 4 --> R[For each product with<br/>stock <= reorder level:<br/>show quantity, cost, supplier,<br/>add to total] --> R2[Show count and total cost] --> C
+    W -- 5 --> S[Show count / 50, totalAdded,<br/>number needing reorder] --> C
+    W -- 6 --> T[Build 5 demo products,<br/>call addProduct for each] --> C
