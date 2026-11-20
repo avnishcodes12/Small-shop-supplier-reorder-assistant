@@ -1,7 +1,7 @@
 # Small Shop Supplier Reorder Assistant
 
 **Course:** CAP455 · **Roll no.:** A17 · **Current phase:** CA2 (Persist and Search)
-**Student:** Lavnish Kumar Singh, School of Computer Science and Engineering, LPU
+**Student:** Avnish Kumar Singh, School of Computer Applications, LPU
 
 A menu-driven C++ console program for a small shop owner. It keeps a list of
 the products the shop sells, along with the supplier for each one. It tells
