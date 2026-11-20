@@ -1,0 +1,179 @@
+Data file data/products.dat opened. 6 product(s) loaded.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 9
+Invalid choice. Enter a number from 0 to 8.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 7
+
+Enter code of the product to update: xyz-999
+No product found with code XYZ-999.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 7
+
+Enter code of the product to update: oil-01
+
+Current details:
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+OIL-01     Mustard Oil 1L             25      12      24     165.50  Punjab Oil Depot  9812345678
+
+What do you want to change? (the product code cannot change)
+1. Current stock
+2. Reorder level
+3. Reorder quantity
+4. Unit cost
+5. Supplier phone
+0. Cancel
+Enter choice: 9
+  Invalid: enter a whole number from 0 to 5. Try again.
+Enter choice: 1
+New current stock: -5
+  Invalid: enter a whole number from 0 to 100000. Try again.
+New current stock: abc
+  Invalid: enter a whole number from 0 to 100000. Try again.
+New current stock: 100001
+  Invalid: enter a whole number from 0 to 100000. Try again.
+New current stock: 12
+Product updated and saved to the data file.
+
+Before:
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+OIL-01     Mustard Oil 1L             25      12      24     165.50  Punjab Oil Depot  9812345678
+After:
+OIL-01     Mustard Oil 1L             12      12      24     165.50  Punjab Oil Depot  9812345678  *REORDER*
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 3
+
+Enter product code to search: NOPE-1
+No product found with code NOPE-1.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 8
+
+The data file holds 6 record(s).
+Record number to view: 0
+  Invalid: enter a whole number from 1 to 6. Try again.
+Record number to view: 7
+  Invalid: enter a whole number from 1 to 6. Try again.
+Record number to view: abc
+  Invalid: enter a whole number from 1 to 6. Try again.
+Record number to view: 3
+Record 3 of 6, starting at byte 256:
+
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+OIL-01     Mustard Oil 1L             12      12      24     165.50  Punjab Oil Depot  9812345678  *REORDER*
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 7
+
+Enter code of the product to update: soap-04
+
+Current details:
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+SOAP-04    Bath Soap Pack of 4        12      12      10     150.00  Gupta Wholesale   9988776655  *REORDER*
+
+What do you want to change? (the product code cannot change)
+1. Current stock
+2. Reorder level
+3. Reorder quantity
+4. Unit cost
+5. Supplier phone
+0. Cancel
+Enter choice: 0
+Update cancelled.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 5
+
+--- Summary ---
+Products stored            : 6 / 50
+Loaded from file at start  : 6
+Added in this run          : 0
+Need reorder now           : 4
+Data file                  : data/products.dat
+Records in file            : 6
+Record size                : 128 bytes
+File size                  : 768 bytes
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 0
+Goodbye! All changes are already saved in data/products.dat.

@@ -1,0 +1,110 @@
+classDiagram
+    direction LR
+    class Product {
+        -string productCode
+        -string name
+        -string supplierName
+        -string supplierPhone
+        -int currentStock
+        -int reorderLevel
+        -int reorderQty
+        -double unitCost
+        -int totalAdded$
+        +int MAX_PRODUCTS$
+        +int CODE_MAX_LEN$
+        +int TEXT_MAX_LEN$
+        +int PHONE_LEN$
+        +int QTY_MAX$
+        +Product() «default constructor»
+        +Product(code, name, ..., cost) «parameterised»
+        +Product(const Product&) «copy constructor»
+        +Product(const ProductRecord&) «from file record»
+        +toRecord() ProductRecord
+        +copyFrom(const Product&) void
+        +setAll(code, name, supplier, phone, stock, level, qty, cost) bool
+        +setProductCode() / setName() / setSupplierName() / setSupplierPhone() bool
+        +setCurrentStock() / setReorderLevel() / setReorderQty() / setUnitCost() bool
+        +getProductCode() ... getUnitCost() «inline»
+        +needsReorder() bool «inline»
+        +reorderCost() double «inline»
+        +isValid() bool
+        +hasSameKey(Product) bool
+        +normalizeCode(string)$ string
+        +isValidCode() / isValidText() / isValidPhone()$ bool
+        +isValidQty(int) / isValidCost(double)$ bool
+        +getTotalAdded()$ int
+        +displayHeader()$ void
+    }
+    class ProductRecord {
+        <<struct>>
+        +char code[11]
+        +char name[41]
+        +char supplierName[41]
+        +char supplierPhone[11]
+        +int currentStock
+        +int reorderLevel
+        +int reorderQty
+        +double unitCost
+    }
+    class ProductFile {
+        -fstream file
+        -string path
+        +int RECORD_SIZE$
+        +ProductFile(path = "data/products.dat") «default argument»
+        +~ProductFile() «destructor, closes file»
+        +isOpen() bool «inline»
+        +recordCount() int
+        +sizeInBytes() long
+        +readAt(index, ProductRecord&) bool «seekg»
+        +writeAt(index, ProductRecord) bool «seekp»
+        +append(ProductRecord) int
+        +findByCode(code, ProductRecord&) int «seekg search»
+        +rewind() void
+        +readNext(ProductRecord&) bool «sequential»
+    }
+    class ProductStore {
+        -Product items[50]
+        -int recordNo[50]
+        -int count
+        -int loadedCount
+        -int skippedCount
+        -ProductFile file
+        -loadFromFile() void
+        +ProductStore(path = "data/products.dat")
+        +addProduct(Product) AddResult
+        +findByCode(string) Product* or nullptr
+        +searchFile(code, Product&) int
+        +readRecord(index, Product&) bool
+        +updateProduct(Product) UpdateResult
+        +displayAll() void
+        +displayReorderList() int
+        +countNeedingReorder() int
+        +getCount() / isFull() / isEmpty() «inline»
+    }
+    class AddResult {
+        <<enumeration>>
+        ADD_OK
+        ADD_INVALID
+        ADD_DUPLICATE
+        ADD_FULL
+        ADD_FILE_ERROR
+    }
+    class UpdateResult {
+        <<enumeration>>
+        UPDATE_OK
+        UPDATE_INVALID
+        UPDATE_NOT_FOUND
+        UPDATE_FILE_ERROR
+    }
+    class displayProduct {
+        <<friend function>>
+        displayProduct(Product) void
+    }
+    ProductStore "1" *-- "0..50" Product : stores in array
+    ProductStore "1" *-- "1" ProductFile : owns
+    ProductFile ..> ProductRecord : reads and writes
+    Product ..> ProductRecord : converts to and from
+    ProductStore ..> AddResult : returns
+    ProductStore ..> UpdateResult : returns
+    Product ..> ProductStore : friend class
+    displayProduct ..> Product : friend, reads private data

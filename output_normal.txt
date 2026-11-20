@@ -1,0 +1,107 @@
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+--- Add Product (leave any field blank to cancel) ---
+Product code (3-10 chars: A-Z, 0-9, -): Product name: Supplier name: Supplier phone (10 digits): Current stock (units): Reorder level (reorder when stock <= this): Reorder quantity (units per order): Unit cost (Rs.): Product added successfully.
+Note: stock is already at or below the reorder level.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+--- Add Product (leave any field blank to cancel) ---
+Product code (3-10 chars: A-Z, 0-9, -): Product name: Supplier name: Supplier phone (10 digits): Current stock (units): Reorder level (reorder when stock <= this): Reorder quantity (units per order): Unit cost (Rs.): Product added successfully.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+--- Add Product (leave any field blank to cancel) ---
+Product code (3-10 chars: A-Z, 0-9, -): Product name: Supplier name: Supplier phone (10 digits): Current stock (units): Reorder level (reorder when stock <= this): Reorder quantity (units per order): Unit cost (Rs.): Product added successfully.
+Note: stock is already at or below the reorder level.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+RC-101     Basmati Rice 5kg            8      10      20     410.00  Sharma Traders    9876543210  *REORDER*
+OIL-01     Mustard Oil 1L             25      12      24     165.50  Punjab Oil Depot  9812345678
+SUG-01     Sugar 1kg                   5      15      30      44.00  Sharma Traders    9876543210  *REORDER*
+Total products: 3
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+Enter product code to search: 
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+RC-101     Basmati Rice 5kg            8      10      20     410.00  Sharma Traders    9876543210  *REORDER*
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+CODE       PRODUCT                 STOCK   LEVEL   ORDER          EST.COST  CALL SUPPLIER
+----------------------------------------------------------------------------------------------------
+RC-101     Basmati Rice 5kg            8      10      20           8200.00  Sharma Traders (9876543210)
+SUG-01     Sugar 1kg                   5      15      30           1320.00  Sharma Traders (9876543210)
+Items to reorder: 2   Estimated total cost: Rs. 9520.00
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: 
+--- Summary ---
+Products stored       : 3 / 50
+Products added (total): 3
+Need reorder now      : 2
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code
+4. View reorder list
+5. Summary
+6. Load demo products
+0. Exit
+Enter choice: Goodbye!

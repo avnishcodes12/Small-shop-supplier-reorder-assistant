@@ -1,0 +1,32 @@
+9
+abc
+1
+AB
+RC 101
+RC_101
+RC-101
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Basmati Rice 5kg
+Sharma Traders
+98765
+98765abcde
+9876543210
+abc
+-5
+8
+10
+0
+20
+0
+-410
+4.555
+410
+1
+rc-101
+RC-102
+Brown Rice 1kg
+
+3
+XYZ-999
+2
+0

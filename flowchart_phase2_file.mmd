@@ -1,0 +1,18 @@
+flowchart TD
+    S([Program starts]) --> O[ProductStore constructor<br/>ProductFile constructor opens<br/>data/products.dat, creating it if missing]
+    O --> L[Sequential read: rewind,<br/>readNext until end of file]
+    L --> V{Record valid and<br/>code not loaded yet?}
+    V -- Yes --> K[Copy into items count,<br/>remember record number]
+    V -- No --> SK[Count as skipped]
+    K --> M[/Menu/]
+    SK --> M
+    M --> A[Add: append record<br/>at end of file]
+    M --> SR[Search: for i = 0 to n-1<br/>seekg i x 128, read, compare code]
+    M --> U[Update: copy constructor keeps 'before',<br/>edit one field with its setter]
+    U --> U2[seekp recordNo x 128,<br/>write 128 bytes, flush]
+    M --> R[View record n:<br/>seekg n-1 x 128, read]
+    M --> E([Exit: ProductFile destructor<br/>closes the file])
+    A --> M
+    SR --> M
+    U2 --> M
+    R --> M

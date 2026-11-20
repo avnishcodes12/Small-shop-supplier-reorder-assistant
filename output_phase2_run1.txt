@@ -1,0 +1,172 @@
+Data file data/products.dat opened. 0 product(s) loaded.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 1
+
+--- Add Product (leave any field blank to cancel) ---
+Product code (3-10 chars: A-Z, 0-9, -): ATTA-10
+Product name: Wheat Atta 10kg
+Supplier name: Gupta Wholesale
+Supplier phone (10 digits): 9988776655
+Current stock (units): 6
+Reorder level (reorder when stock <= this): 8
+Reorder quantity (units per order): 4
+Unit cost (Rs.): 380
+Product added successfully.
+Note: stock is already at or below the reorder level.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 6
+  RC-101: Product added successfully.
+  OIL-01: Product added successfully.
+  SUG-01: Product added successfully.
+  TEA-250: Product added successfully.
+  SOAP-04: Product added successfully.
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 7
+
+Enter code of the product to update: rc-101
+
+Current details:
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+RC-101     Basmati Rice 5kg            8      10      20     410.00  Sharma Traders    9876543210  *REORDER*
+
+What do you want to change? (the product code cannot change)
+1. Current stock
+2. Reorder level
+3. Reorder quantity
+4. Unit cost
+5. Supplier phone
+0. Cancel
+Enter choice: 1
+New current stock: 28
+Product updated and saved to the data file.
+
+Before:
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+RC-101     Basmati Rice 5kg            8      10      20     410.00  Sharma Traders    9876543210  *REORDER*
+After:
+RC-101     Basmati Rice 5kg           28      10      20     410.00  Sharma Traders    9876543210
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 3
+
+Enter product code to search: sug-01
+Found in the data file: record 4, starting at byte 384.
+
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+SUG-01     Sugar 1kg                   5      15      30      44.00  Sharma Traders    9876543210  *REORDER*
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 8
+
+The data file holds 6 record(s).
+Record number to view: 2
+Record 2 of 6, starting at byte 128:
+
+CODE       PRODUCT                 STOCK   LEVEL  ORDQTY   COST(Rs)  SUPPLIER          PHONE
+----------------------------------------------------------------------------------------------------
+RC-101     Basmati Rice 5kg           28      10      20     410.00  Sharma Traders    9876543210
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 4
+
+CODE       PRODUCT                 STOCK   LEVEL   ORDER          EST.COST  CALL SUPPLIER
+----------------------------------------------------------------------------------------------------
+ATTA-10    Wheat Atta 10kg             6       8       4           1520.00  Gupta Wholesale (9988776655)
+SUG-01     Sugar 1kg                   5      15      30           1320.00  Sharma Traders (9876543210)
+SOAP-04    Bath Soap Pack of 4        12      12      10           1500.00  Gupta Wholesale (9988776655)
+Items to reorder: 3   Estimated total cost: Rs. 4340.00
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 5
+
+--- Summary ---
+Products stored            : 6 / 50
+Loaded from file at start  : 0
+Added in this run          : 6
+Need reorder now           : 3
+Data file                  : data/products.dat
+Records in file            : 6
+Record size                : 128 bytes
+File size                  : 768 bytes
+
+========== SMALL SHOP SUPPLIER REORDER ASSISTANT ==========
+1. Add product
+2. View all products
+3. Search product by code (in the data file)
+4. View reorder list
+5. Summary
+6. Load demo products
+7. Update a product
+8. View a record by its number
+0. Exit
+Enter choice: 0
+Goodbye! All changes are already saved in data/products.dat.

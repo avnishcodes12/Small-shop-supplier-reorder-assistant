@@ -1,0 +1,33 @@
+1
+RC-101
+Basmati Rice 5kg
+Sharma Traders
+9876543210
+8
+10
+20
+410
+1
+oil-01
+Mustard Oil 1L
+Punjab Oil Depot
+9812345678
+25
+12
+24
+165.50
+1
+SUG-01
+Sugar 1kg
+Sharma Traders
+9876543210
+5
+15
+30
+44
+2
+3
+rc-101
+4
+5
+0
